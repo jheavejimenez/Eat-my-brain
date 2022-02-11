@@ -12,6 +12,7 @@ contract ZombieFactory {
     }
 
     //TODO: create an dynanmic array army of zombies
+    Zombie[] public zombies;
 
     //TODO: create a function to create zombies
 
