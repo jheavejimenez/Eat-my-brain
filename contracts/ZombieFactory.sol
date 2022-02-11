@@ -11,5 +11,8 @@ contract ZombieFactory {
         uint dna;
     }
 
+    //TODO: create an dynanmic array army of zombies
+
+    //TODO: create a function to create zombies
 
 }
