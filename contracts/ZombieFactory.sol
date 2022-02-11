@@ -11,9 +11,8 @@ contract ZombieFactory {
         uint dna;
     }
 
-    //TODO: create an dynanmic array army of zombies
     Zombie[] public zombies;
 
     //TODO: create a function to create zombies
-
+    //TODO: create a helper that generates a random DNA
 }
