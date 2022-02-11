@@ -13,6 +13,9 @@ contract ZombieFactory {
 
     Zombie[] public zombies;
 
-    //TODO: create a function to create zombies
+    function _createZombie(string memory _name, uint _dna) private {
+        zombies.push(Zombie(_name, _dna));
+    } 
+    
     //TODO: create a helper that generates a random DNA
 }
