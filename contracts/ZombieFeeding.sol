@@ -20,8 +20,12 @@ interface IKittyInterface {
 
 
 contract ZombieFeeding is ZombieFactory {
-  address cryptoKittyAddress = 0x06012c8cf97BEaD5deAe237070F9587f8E7A266d;
-  IKittyInterface kittyContract = IKittyInterface(cryptoKittyAddress);
+
+  IKittyInterface kittyContract;
+
+  function setKittyContractAddress(address _address) external {
+    kittyContract = IKittyInterface(_address);
+  }
 
   function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) public {
     require(msg.sender == zombieToOwner[_zombieId]);
